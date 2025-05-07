@@ -1,0 +1,1 @@
+### Non-functional requirements are not applied here as this is a fake application just to study DDD and SOLID.
