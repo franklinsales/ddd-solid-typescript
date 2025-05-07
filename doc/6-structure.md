@@ -2,6 +2,7 @@
 ## Structure
 
 📦 service-scheduling-system/
+```
 ├── 📁 src/
 │   ├── 📁 modules/
 │   │   ├── 📁 appointments/         # Bounded Context: Appointment Management
@@ -63,6 +64,7 @@
 ├── tsconfig.json
 ├── package.json
 └── README.md
+```
 
 ## ✅ How This Structure Aligns with DDD and SOLID
 
@@ -87,11 +89,13 @@ SOLID:
 * Enables OCP (Open/Closed Principle) since each context can evolve independently.
 
 📦 modules/appointments/
+```
 ├── domain/           # Entities, Value Objects, domain rules, exceptions
 ├── application/      # Use cases (Application Services)
 ├── interfaces/       # Input/output: controllers, DTOs
 ├── infra/            # Framework-specific adapters (DB, external services)
 ├── mappers/          # Transforms between domain ↔ persistence or DTOs
+```
 
 ### 🔹 domain/
 Purpose: Core of the business logic.
