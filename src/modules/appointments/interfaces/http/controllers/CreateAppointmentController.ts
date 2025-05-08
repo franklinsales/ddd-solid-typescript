@@ -22,3 +22,27 @@ export class CreateAppointmentController {
     }
   }
 }
+
+/*
+* Concept Breakdown
+* Controller Role
+* - Translates HTTP requests -> DTOs.
+* - Delegates logic to Application Layer (use case).
+* - Translates results -> HTTP responses.
+*/
+
+/*
+* DDD:
+* - This lives in the Interface Layer, closest to the user.
+* - No business logic is allowed here - just data transformation and delegation.
+*/
+
+/*
+* SRP: Handles HTTP concerns only.
+* ISP: Keeps controllers lean and focused.
+*/
+
+
+/* Summary:
+* You now have a full request flow: HTTP → controller → use case → domain → repository.
+*/
