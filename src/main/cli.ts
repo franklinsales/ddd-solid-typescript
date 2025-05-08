@@ -1,6 +1,6 @@
-import { InMemoryAppointmentRepository } from './modules/appointments/infra/repositories/InMemoryAppointmentRepository';
-import { CreateAppointmentUseCase } from './modules/appointments/application/use-cases/CreateAppointmentUseCase';
-import { HOUR } from './utils/time';
+import { InMemoryAppointmentRepository } from '../modules/appointments/infra/repositories/InMemoryAppointmentRepository';
+import { CreateAppointmentUseCase } from '../modules/appointments/application/use-cases/CreateAppointmentUseCase';
+import { HOUR } from '../utils/time';
 
 async function main() {
   const appointmentRepository = new InMemoryAppointmentRepository();
