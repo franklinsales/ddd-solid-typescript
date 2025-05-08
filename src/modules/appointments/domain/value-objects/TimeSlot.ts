@@ -7,7 +7,9 @@ export class TimeSlot {
       throw new Error('Start time must be before end time.');
     }
     if (start.getTime() < Date.now()) {
-      throw new Error('TimeSlot cannot start in the past.');
+      throw new Error(
+        `Invalid time slot: start time (${start.toISOString()}) is in the past. Current time is (${new Date().toISOString()}).`
+      );
     }
   }
 

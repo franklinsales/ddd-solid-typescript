@@ -28,3 +28,16 @@ export interface IAppointmentRepository {
  * The domains depends only on abstractions (DIP - Dependency Inversion Principle). This means that the domain layer should not depend on concrete implementations of repositories, but rather on interfaces that define the contract for the repository.
  * In the infra/ layer, there is the implementation of the repository that interacts with the database (e.g., Prisma, TypeORM, PostgreSQL, MongoDB, etc.).
  */
+
+/**
+ * DDD:
+ * - The respository handles aggregate retrieval and persistenece.
+ * - All repository interfaces belong in the domain layer, not application or infrastructure.
+ * - Helps keep the domain pure and testable.
+ */
+
+/**
+ * SOLID:
+ * - SRP: This interface only concerns itself with appointment storage/retrieval.
+ * - DIP: Application and domain layers depend on this interface, not a concrete DB technology.
+ */

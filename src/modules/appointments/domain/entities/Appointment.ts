@@ -7,7 +7,7 @@ export class Appointment {
     public readonly id: string,
     public readonly clientId: string,
     public readonly providerId: string,
-    public readonly date: TimeSlot,
+    public readonly timeSlot: TimeSlot,
   ) {}
 }
 
